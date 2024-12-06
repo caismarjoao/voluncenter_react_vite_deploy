@@ -10,7 +10,7 @@ import Home from '~/pages/home/Home';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/voluncenter_react_vite_deploy",
     element: <Home />,
   },
   {
