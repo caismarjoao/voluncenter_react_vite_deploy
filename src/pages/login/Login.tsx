@@ -1,4 +1,3 @@
-import { images } from '~/constants';
 import "~/pages/login/Login.css"
 
 
