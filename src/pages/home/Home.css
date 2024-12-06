@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Alinha verticalmente */
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  
+  .header-content {
+    display: flex;
+    
+    align-items: center; /* Alinha verticalmente imagem e texto */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+  }
+  
+  .image {
+    height: 150px;
+    width: auto;
+  }
+  
+  .header-text {
+    text-align: left; /* Texto alinhado à esquerda em desktop */
+  }
+  
+  .logo {
+    font-size: 2.5em;
+    color: #34c759; /* Verde */
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #34c759;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect */
+  button:hover {
+    background-color: #28a745; /* Cor ligeiramente mais escura no hover */
+    transform: scale(1.05); /* Aumenta o tamanho ligeiramente */
+  }
+  
+  /* Botão de Natal */
+  .volunteer-button:hover,
+  .christmas-card-button:hover {
+    background-color: #28a745; /* Verde mais escuro no hover */
+  }
+  
+  /* Se o botão tiver borda no futuro */
+  button:hover {
+    border-color: #28a745;
+  }
+  
+  .about,
+  .legal-notice,
+  .christmas-card {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Responsividade para telemóveis */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column; /* Empilha a imagem e o texto */
+      align-items: center; /* Centraliza o conteúdo */
+    }
+  
+    .header-content {
+      flex-direction: column; /* Empilha a imagem e texto em mobile */
+      gap: 10px; /* Reduz o espaço entre eles */
+    }
+  
+    .image {
+      height: 120px; /* Diminui o tamanho da imagem no mobile */
+    }
+  
+    .header-text {
+      text-align: center; /* Centraliza o texto em mobile */
+    }
+  
+    .logo {
+      font-size: 2em; /* Diminui o tamanho da fonte */
+    }
+  
+    .subtitle {
+      font-size: 1em; /* Reduz o tamanho da fonte da legenda */
+    }
+  
+    .buttons {
+      flex-direction: column; /* Empilha os botões em mobile */
+      gap: 10px;
+    }
+  
+    button {
+      width: 100%; /* Botões ocupam a largura total em mobile */
+      padding: 10px;
+    }
+  }
+  
