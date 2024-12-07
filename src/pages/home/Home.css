@@ -40,12 +40,6 @@ body {
     margin: 0;
   }
   
-  .subtitle {
-    font-size: 1.2em;
-    color: #777;
-    margin-top: 5px;
-  }
-  
   .buttons {
     margin-top: 20px;
     display: flex;
@@ -80,6 +74,7 @@ body {
     border-color: #28a745;
   }
   
+  .mission,
   .about,
   .legal-notice,
   .christmas-card {
@@ -97,7 +92,7 @@ body {
   
   p {
     font-size: 1em;
-    color: #333;
+    color: #000;
     line-height: 1.6;
   }
   

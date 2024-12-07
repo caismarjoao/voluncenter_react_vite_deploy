@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/login",
+    path: "/voluncenter_react_vite_deploy/login",
     element: <Login />,
   },
 ]);

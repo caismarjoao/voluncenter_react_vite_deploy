@@ -11,14 +11,19 @@ export default function HomePage() {
       <img src={images.logo} alt="Logo" className="image" />
       <header className="header">
         <h1 className="logo">VolunCenter</h1>
-        <p className="subtitle">"Proposta de Valor"</p>
         <div className="buttons">
-          <button className="volunteer-button" onClick={() => navigate('/login')}>Voluntariar</button>
+          <button className="volunteer-button" onClick={() => navigate('/voluncenter_react_vite_deploy/login')}>Voluntariar</button>
           <button className="christmas-card-button">Postal Natal</button>
         </div>
       </header>
       
+      <section className="mission">
+        <h2>Unimos Voluntários e Associações!</h2>
+        <p>Centralizamos campanhas de voluntariado para facilitar a inscrição de voluntários e a divulgação pelas associações. Descobre projetos, inscreve-te facilmente e aproveita benefícios exclusivos. Simplificamos o impacto!</p>
+      </section>
+
       <section className="about">
+        
         <h2>Quem Somos</h2>
         <p>
           Grupo de alunos da Licenciatura em Engenharia Informática dedicados a
