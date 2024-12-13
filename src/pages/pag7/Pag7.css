@@ -1,0 +1,217 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza todo o conteúdo */
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    padding: 0;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    min-height: 100%; /* Garantir que o conteúdo ocupe toda a altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza os itens verticalmente */
+}
+
+.large-green-button {
+    background-color: #6FE069;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 144px;
+    font-size: 32px;
+    border: none;
+    border-radius: 0 0 24px 24px;
+    cursor: default;
+    margin: 0;
+    position: fixed; /* Fixa o botão no topo */
+    top: 0; /* Fixa no topo da tela */
+    left: 0;
+}
+
+.large-green-button:hover,
+.large-green-button:active {
+    background-color: #6FE069;
+    transform: none;
+}
+
+.imagem-exemplo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    z-index: 10;
+}
+
+.person-name {
+    position: absolute;
+    top: 150px;  /* Menor valor para mover mais para cima */
+    left: 20px;
+    transform: translateX(0); /* Remover centralização */
+    font-size: 28px;
+}
+.person-age {
+    position: absolute;
+    top: 200px;
+    left: 20%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    color: #000;
+}
+
+.user-since {
+    position: absolute;
+    top: 240px;
+    left: 40%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #000;
+    margin-top: 20px;
+    white-space: nowrap;  /* Impede a quebra de linha */
+}
+
+.stat-container {
+    position: absolute;
+    top: 340px; /* Ajustado para alinhar diretamente abaixo de .user-since */
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    margin-top: 20px; /* Aumentado para dar mais espaço entre as frases */
+}
+
+.stat-item {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px; /* Aumentado para espaçar as frases */
+}
+
+.stat-text {
+    flex: 1; /* O texto ocupa o máximo de espaço disponível */
+    max-width: 70%; /* Limita o tamanho do texto para evitar problemas */
+    text-align: left; /* Mantém alinhado à esquerda */
+    margin-right: 10px; /* Espaço entre texto e número */
+}
+
+
+.stat-text {
+    flex-grow: 1; /* Faz o texto ocupar o máximo de espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-right: 10px; /* Espaço entre texto e número */
+}
+
+.stat-number {
+    min-width: 80px; /* Define uma largura mínima fixa para alinhar os números */
+    text-align: right; /* Alinha os números à direita */
+    color: #6FE069;
+    font-weight: bold;
+}
+
+/* Estilos responsivos */
+@media (min-width: 740px) {
+    .large-green-button {
+        height: 100px;
+        font-size: 24px;
+    }
+
+    .imagem-exemplo {
+        width: 100px;
+        height: 100px;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .person-name {
+        position: absolute;
+        top: 160px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 36px;
+        color: #000;
+    }
+    /* Para telas grandes, o nome e a idade ficam alinhados à esquerda */
+   
+
+    .person-age {
+        top: 180px;
+        left: 20px;
+        transform: translateX(0); /* Remover centralização */
+        font-size: 24px;
+    }
+
+    .user-since {
+        top: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+    }
+
+    .stat-container {
+        top: 280px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column; /* Mantém os itens em coluna */
+    }
+
+    .stat-item {
+        font-size: 18px;
+        margin-bottom: 20px; /* Aumentado para maior afastamento */
+    }
+}
+
+@media (min-width: 1024px) {
+    .large-green-button {
+        height: 120px;
+        font-size: 28px;
+    }
+
+    .imagem-exemplo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .person-name {
+        font-size: 32px;
+    }
+
+    .person-age {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 32px;
+        color: #000;
+    }
+
+    .user-since {
+        font-size: 20px;
+    }
+
+    .stat-container {
+        position: absolute;
+        top: 340px; /* Ajustado para alinhar diretamente abaixo de .user-since */
+        left: 87%;
+        transform: translateX(-50%);
+        width: calc(100% - 40px);
+        display: flex;
+        flex-direction: column; /* Alinha os itens em coluna */
+        margin-top: 20px; /* Aumentado para dar mais espaço entre as frases */
+    }
+    .stat-text {
+        flex: 1; /* O texto ocupa o máximo de espaço disponível */
+        max-width: 20%; /* Limita o tamanho do texto para evitar problemas */
+        text-align: left; /* Mantém alinhado à esquerda */
+        margin-right: 10px; /* Espaço entre texto e número */
+    }   
+}

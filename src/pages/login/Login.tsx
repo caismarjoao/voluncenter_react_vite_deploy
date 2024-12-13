@@ -1,7 +1,8 @@
 import "~/pages/login/Login.css"
-
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
   return (
     <div className="login-container">
       <h1 className="logo">VolunCenter</h1>
@@ -20,7 +21,7 @@ export default function Login() {
             className="input-field"
             required
           />
-          <button type="submit" className="login-button">
+          <button type="submit" className="login-button" onClick={() => navigate('/voluncenter_react_vite_deploy/voluncenter')}>
             LOGIN
           </button>
         </form>
