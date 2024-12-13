@@ -18,8 +18,8 @@ export default function HomePage() {
 
             {/* Organizations Section */}
             <div className="organizations">
-                <img src={images.caritas} alt="Cáritas Portuguesa" className="organization" onClick={() => navigate('/voluncenter_react_vite_deploy/campanhas')} />
-                <img src={images.ba} alt="Banco Alimentar" className="organization" />
+                <img src={images.ba} alt="Banco Alimentar" className="organization" onClick={() => navigate('/voluncenter_react_vite_deploy/campanhas')}/>
+                <img src={images.caritas} alt="Cáritas Portuguesa" className="organization" />
                 <img src={images.adav} alt="ADAV" className="organization" />
                 <img src={images.irmas} alt="Irmãs Hospitaleiras" className="organization" />
             </div>

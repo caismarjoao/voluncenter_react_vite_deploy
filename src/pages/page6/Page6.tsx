@@ -14,11 +14,11 @@ const SimulacaoTelefone: React.FC = () => {
     return (
         <div className="phone">
             <div className="screen">
-                <h1 className="title_header">Liga portuguesa contra o cancro</h1>
-                <p>13 - 14 Novembro</p>
+                <h1 className="title_header">Banco Alimentar</h1>
+                <p>31 Maio - 1 Junho</p>
                 <p className="text_subscribe">Inscrever Turno:</p>
                 <div className="schedules">
-                    <div className="date">13 Novembro</div>
+                    <div className="date">31 Maio</div>
                     <div className="date_options">
                         {[1, 2, 3, 4].map((id) => (
                             <div className="schedules_position" key={id}>
@@ -40,7 +40,7 @@ const SimulacaoTelefone: React.FC = () => {
                         ))}
                     </div>
 
-                    <div className="date">14 Novembro</div>
+                    <div className="date">1 Junho</div>
                     <div className="date_options">
                         {[5, 6, 7, 8].map((id) => (
                             <div className="schedules_position" key={id}>
