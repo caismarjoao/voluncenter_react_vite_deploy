@@ -9,6 +9,8 @@ import retangulo from '../assets/retangulo_cazinha.png';
 import logo from '../assets/logo_voluncenter.png';
 import irmas from '../assets/irmas_hospitaleiras.png';
 import profile from '../assets/profile.png';
+import circle_fill from '../assets/circle_fill.png';
+import empty_circle from '../assets/empty_circle.png';
 
 export default {
     adav,
@@ -21,5 +23,7 @@ export default {
     retangulo,
     logo,
     irmas,
-    profile
+    profile,
+    circle_fill,
+    empty_circle
 };
