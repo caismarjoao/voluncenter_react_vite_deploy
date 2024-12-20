@@ -22,7 +22,7 @@
         min-height: 100vh;
         background-color: white;
         border-radius: 10px;
-        margin:0 ;
+        margin-left: 50px;
         overflow: hidden;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
@@ -83,27 +83,34 @@
         transform: scale(1.02);
     }
 
+    @media (min-width: 768px){
+    .footer {
+        position: fixed;
+        top: 0; /* Começa no topo da página */
+        left: 0; /* Alinhado à esquerda */
+        width: 60px; /* Largura fixa */
+        height: 100%; /* Altura total da tela */
+        background-color: #6FE069; /* Fundo verde */
+        display: flex;
+        flex-direction: column; /* Coloca os ícones na vertical */
+        align-items: center; /* Centraliza os ícones horizontalmente */
+        justify-content: flex-start; /* Espaça os ícones igualmente */
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-left-radius: 0; /* Garante que o lado esquerdo não tenha borda arredondada */
+        border-bottom-left-radius: 0;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1); /* Sombra leve à direita */
+        padding: 2rem 0; /* Espaçamento interno */
+        gap: 2rem;
+    }
+}
+
     /* Footer Navigation */
     /* Barra fixa */
-    @media (min-width: 768px){
-        .footer {
-            position: fixed;
-            top: 0; /* Começa no topo da página */
-            left: 0; /* Alinhado à esquerda */
-            width: 60px; /* Largura fixa */
-            height: 100%; /* Altura total da tela */
-            background-color: #6FE069; /* Fundo verde */
-            display: flex;
-            flex-direction: column; /* Coloca os ícones na vertical */
-            align-items: center; /* Centraliza os ícones horizontalmente */
-            justify-content: flex-start; /* Espaça os ícones igualmente */
-            border-top-right-radius: 1rem;
-            border-bottom-right-radius: 1rem;
-            border-top-left-radius: 0; /* Garante que o lado esquerdo não tenha borda arredondada */
-            border-bottom-left-radius: 0;
-            box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1); /* Sombra leve à direita */
-            padding: 2rem 0; /* Espaçamento interno */
-            gap: 2rem;
+    @media (max-width: 768px){
+
+        .container{
+            margin-left: 0;
         }
     }
     
@@ -130,6 +137,7 @@
     .nav-button:hover {
         transform: scale(1.1);
     }
+
   
     @media (max-width: 480px){
         /* Container */
@@ -240,5 +248,6 @@
         .nav-button:hover {
             transform: scale(1.1);
         }
+    
     }
     

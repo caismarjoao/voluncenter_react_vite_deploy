@@ -61,7 +61,7 @@ const SimulacaoTelefone: React.FC = () => {
                             </div>
                         ))}
                     </div>
-
+        
                     <button
                         className="final"
                         id="inscreverBtn"
@@ -72,7 +72,9 @@ const SimulacaoTelefone: React.FC = () => {
                     >
                         Inscrever-se
                     </button>
+                  
                 </div>
+                
             </div>
             <div className="footer">
                 <a onClick={() => navigate('/voluncenter_react_vite_deploy/voluncenter')}>

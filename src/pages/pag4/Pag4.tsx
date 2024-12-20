@@ -18,7 +18,10 @@ export default function HomePage() {
                     <p style={{marginLeft: "3rem"}}><strong>Local:</strong> Coimbra</p>
                     <p style={{marginLeft: "3rem"}}><strong>Hora/Turnos:</strong> Detalhes dos turnos</p>
                 </div>
-                <button className="volunteer-button" onClick={() => navigate('/voluncenter_react_vite_deploy/inscrever')}>Voluntariar</button>
+                <div className="button-container">
+                    <button className="volunteer-button" onClick={() => navigate('/voluncenter_react_vite_deploy/inscrever')}>Voluntariar</button>
+                </div>
+                <h2 className="spacing_division"></h2>
             </div>
             {/* Footer Navigation */}
             <div className="footer">

@@ -16,6 +16,7 @@ body {
 
 .button-container {
     background-color: #ffffff;
+    margin-left: 40px;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -125,9 +126,24 @@ h2 {
     text-align: center;
     margin-top: 20px; /* Adiciona espaço acima do botão */
     margin-left: 25%;
+    margin-bottom: 20px;
 }
 
 /* Alteração de cor ao passar o mouse */
 .volunteer-button:hover {
     background-color: #218838;
+}
+
+.button-container {
+    background-color: #ffffff;
+    height: auto; /* Permite ajuste automático de altura */
+    overflow: visible; /* Garante que o botão não fique oculto */
+    position: relative;
+    padding-bottom: 20px; /* Espaço abaixo do botão */
+}
+
+@media (max-width: 768px) { /* Ajuste o valor do tamanho conforme necessário */
+    .button-container {
+        margin-left: 0; /* Remove a margem para telas pequenas */
+    }
 }

@@ -54,14 +54,14 @@
 }
 
 .mission, .about, .legal-notice, .christmas-card {
-  margin: 20px auto;
+  margin: 0;
   max-width: 800px;
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
 .mission h2, .about h2, .legal-notice h2, .christmas-card h2 {
-  text-align: left;
+  text-align: center;
   color: #333;
 }
 
@@ -75,6 +75,10 @@
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
+  .informations_about{
+    margin-left: -15px;
+    margin-right: 15px;
+  }
   .buttons_voluncenter {
     flex-direction: column; /* Empilhar botões verticalmente */
     align-items: center;
@@ -91,9 +95,14 @@
     font-size: 24px; /* Reduz o tamanho do cabeçalho */
   }
 
-  .mission, .about, .legal-notice, .christmas-card {
-    margin: 10px auto; /* Reduz margens externas */
-    padding: 0 10px; /* Adiciona espaçamento interno lateral */
+  .mission h2, .about h2, .legal-notice h2, .christmas-card h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .mission p, .about p, .legal-notice p, .christmas-card p {
+    text-align: justify;
+    color: #000;
   }
 
   .image {
